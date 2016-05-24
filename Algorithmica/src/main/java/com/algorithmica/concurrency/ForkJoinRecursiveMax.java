@@ -44,14 +44,16 @@ public class ForkJoinRecursiveMax extends RecursiveTask<Integer> {
 
 	}
 
-	private static final ForkJoinPool fjPool = new ForkJoinPool();
+	private static final ForkJoinPool fjPool = new ForkJoinPool(Runtime.getRuntime().availableProcessors());
 
 	public static int findMax(int[] arr) throws InterruptedException {
+
 		return fjPool.invoke(new ForkJoinRecursiveMax(arr, 0, arr.length));
 
 	}
 
 	public static void main(String[] args) throws InterruptedException {
+
 
 		int[] arr = new int[100000];
 		Random r = new Random(100);

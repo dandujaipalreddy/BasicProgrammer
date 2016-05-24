@@ -4,7 +4,6 @@ import java.io.Externalizable;
 import java.io.IOException;
 import java.io.ObjectInput;
 import java.io.ObjectOutput;
-import java.io.Serializable;
 
 import com.google.gson.Gson;
 
@@ -104,6 +103,39 @@ public class TestEmployee implements Externalizable {
 	@Override
 	public String toString() {
 		return "Employee [empid=" + empid + ", name=" + name + ", company=" + company + ", age=" + age + "]";
+	}
+
+	static boolean isAdmissibleOverpayment(double[] prices, String[] notes, double x) {
+
+		int sum = 0;
+		for (int i = 0; i < notes.length; i++) {
+			if (notes[i].contains("%")) {
+				double rate = Double.parseDouble(notes[i].split("%", 0)[0]);
+				double percentage = rate / 100;
+				double inc = 0;
+				if (notes[i].contains("higher")) {
+					inc = 1 + 1 / percentage;
+					System.out.println(prices[i] / inc);
+
+				} else if (notes[i].contains("lower")) {
+					inc = 1 - 1 / percentage;
+					System.out.println(prices[i] / inc);
+
+				}
+				sum += prices[i] / inc;
+			}
+		}
+		System.out.println(sum);
+		return x >= sum;
+	}
+
+	public static void main(String[] args) {
+
+		double prices[] = { 48, 165 };
+		String notes[] = { "20.00% lower than in-store", "10.00% higher than in-store" };
+		double x = 2;
+
+		System.out.println(isAdmissibleOverpayment(prices, notes, x));
 	}
 
 }
