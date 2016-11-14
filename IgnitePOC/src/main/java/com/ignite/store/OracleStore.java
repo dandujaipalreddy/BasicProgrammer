@@ -111,7 +111,7 @@ public class OracleStore extends CacheStoreAdapter<Integer, Record> implements S
         }
        // System.out.println("Connection");
         //
-        Connection conn = DriverManager.getConnection("jdbc:oracle:thin:@//fn10vir2221.ivycomptech.co.in:1521/real", "mca_user", "mca123");
+        Connection conn = DriverManager.getConnection("jdbc:oracle:thin:@//localhost:1521/real", "mca_user", "mca123");
         conn.setAutoCommit(true);
         return conn;
     }
