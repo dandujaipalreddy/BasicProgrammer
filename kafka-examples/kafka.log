@@ -1,0 +1,913 @@
+2016-11-08 16:49:11,615 INFO [main] INFO  org.apache.kafka.clients.producer.ProducerConfig  - ProducerConfig values: 
+	compression.type = none
+	metric.reporters = []
+	metadata.max.age.ms = 300000
+	metadata.fetch.timeout.ms = 60000
+	acks = 0
+	batch.size = 16384
+	reconnect.backoff.ms = 10
+	bootstrap.servers = [10.1.90.166:9092, 10.1.90.167:9092, 10.1.90.168:9092]
+	receive.buffer.bytes = 32768
+	retry.backoff.ms = 100
+	buffer.memory = 33554432
+	timeout.ms = 30000
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	retries = 0
+	max.request.size = 1048576
+	block.on.buffer.full = true
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	metrics.sample.window.ms = 30000
+	send.buffer.bytes = 131072
+	max.in.flight.requests.per.connection = 5
+	metrics.num.samples = 2
+	linger.ms = 0
+	client.id = camus
+
+2016-11-08 16:49:33,855 DEBUG [main] DEBUG org.apache.kafka.clients.producer.internals.Metadata  - Updated cluster metadata version 1 to Cluster(nodes = [Node(10.1.90.168, 9092), Node(10.1.90.167, 9092), Node(10.1.90.166, 9092)], partitions = [])
+2016-11-08 16:49:33,944 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.producer.internals.Sender  - Starting Kafka producer I/O thread.
+2016-11-08 16:49:33,945 DEBUG [main] DEBUG org.apache.kafka.clients.producer.KafkaProducer  - Kafka producer started
+2016-11-08 16:49:34,376 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Trying to send metadata request to node -1
+2016-11-08 16:49:34,376 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Init connection to node -1 for sending metadata request in the next iteration
+2016-11-08 16:49:34,376 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Initiating connection to node -1 at 10.1.90.166:9092.
+2016-11-08 16:49:34,378 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Trying to send metadata request to node -1
+2016-11-08 16:49:34,380 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Completed connection to node -1
+2016-11-08 16:49:34,478 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Trying to send metadata request to node -1
+2016-11-08 16:49:34,493 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Sending metadata request ClientRequest(expectResponse=true, payload=null, request=RequestSend(header={api_key=3,api_version=0,correlation_id=0,client_id=camus}, body={topics=[test-topic]})) to node -1
+2016-11-08 16:49:34,505 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.producer.internals.Metadata  - Updated cluster metadata version 2 to Cluster(nodes = [Node(3, 10.1.90.168, 9092), Node(1, 10.1.90.166, 9092), Node(2, 10.1.90.167, 9092)], partitions = [Partition(topic = test-topic, partition = 0, leader = 3, replicas = [3,1,], isr = [3,1,], Partition(topic = test-topic, partition = 1, leader = 1, replicas = [1,2,], isr = [1,2,], Partition(topic = test-topic, partition = 2, leader = 2, replicas = [2,3,], isr = [2,3,]])
+2016-11-08 16:49:34,513 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Initiating connection to node 2 at 10.1.90.167:9092.
+2016-11-08 16:49:34,513 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Initiating connection to node 3 at 10.1.90.168:9092.
+2016-11-08 16:49:34,514 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Initiating connection to node 1 at 10.1.90.166:9092.
+2016-11-08 16:51:30,673 INFO [main] INFO  org.apache.kafka.clients.producer.ProducerConfig  - ProducerConfig values: 
+	compression.type = none
+	metric.reporters = []
+	metadata.max.age.ms = 300000
+	metadata.fetch.timeout.ms = 60000
+	acks = 0
+	batch.size = 16384
+	reconnect.backoff.ms = 10
+	bootstrap.servers = [10.1.90.166:9092, 10.1.90.167:9092, 10.1.90.168:9092]
+	receive.buffer.bytes = 32768
+	retry.backoff.ms = 100
+	buffer.memory = 33554432
+	timeout.ms = 30000
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	retries = 0
+	max.request.size = 1048576
+	block.on.buffer.full = true
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	metrics.sample.window.ms = 30000
+	send.buffer.bytes = 131072
+	max.in.flight.requests.per.connection = 5
+	metrics.num.samples = 2
+	linger.ms = 0
+	client.id = camus
+
+2016-11-08 16:51:53,084 DEBUG [main] DEBUG org.apache.kafka.clients.producer.internals.Metadata  - Updated cluster metadata version 1 to Cluster(nodes = [Node(10.1.90.168, 9092), Node(10.1.90.166, 9092), Node(10.1.90.167, 9092)], partitions = [])
+2016-11-08 16:51:53,176 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.producer.internals.Sender  - Starting Kafka producer I/O thread.
+2016-11-08 16:51:53,176 DEBUG [main] DEBUG org.apache.kafka.clients.producer.KafkaProducer  - Kafka producer started
+2016-11-08 16:51:53,626 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Trying to send metadata request to node -3
+2016-11-08 16:51:53,626 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Init connection to node -3 for sending metadata request in the next iteration
+2016-11-08 16:51:53,626 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Initiating connection to node -3 at 10.1.90.168:9092.
+2016-11-08 16:51:53,628 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Trying to send metadata request to node -3
+2016-11-08 16:51:53,630 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Completed connection to node -3
+2016-11-08 16:51:53,728 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Trying to send metadata request to node -3
+2016-11-08 16:51:53,744 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Sending metadata request ClientRequest(expectResponse=true, payload=null, request=RequestSend(header={api_key=3,api_version=0,correlation_id=0,client_id=camus}, body={topics=[test-topic]})) to node -3
+2016-11-08 16:51:53,758 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.producer.internals.Metadata  - Updated cluster metadata version 2 to Cluster(nodes = [Node(2, 10.1.90.167, 9092), Node(3, 10.1.90.168, 9092), Node(1, 10.1.90.166, 9092)], partitions = [Partition(topic = test-topic, partition = 0, leader = 3, replicas = [3,1,], isr = [3,1,], Partition(topic = test-topic, partition = 1, leader = 1, replicas = [1,2,], isr = [1,2,], Partition(topic = test-topic, partition = 2, leader = 2, replicas = [2,3,], isr = [2,3,]])
+2016-11-08 16:51:53,767 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Initiating connection to node 2 at 10.1.90.167:9092.
+2016-11-08 16:51:53,768 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Initiating connection to node 3 at 10.1.90.168:9092.
+2016-11-08 16:51:53,768 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Initiating connection to node 1 at 10.1.90.166:9092.
+2016-11-08 16:55:37,580 INFO [main] INFO  org.apache.kafka.clients.producer.ProducerConfig  - ProducerConfig values: 
+	compression.type = none
+	metric.reporters = []
+	metadata.max.age.ms = 300000
+	metadata.fetch.timeout.ms = 60000
+	acks = all
+	batch.size = 16384
+	reconnect.backoff.ms = 10
+	bootstrap.servers = [10.1.90.166:9092, 10.1.90.167:9092, 10.1.90.168:9092]
+	receive.buffer.bytes = 32768
+	retry.backoff.ms = 100
+	buffer.memory = 33554432
+	timeout.ms = 30000
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	retries = 0
+	max.request.size = 1048576
+	block.on.buffer.full = true
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	metrics.sample.window.ms = 30000
+	send.buffer.bytes = 131072
+	max.in.flight.requests.per.connection = 5
+	metrics.num.samples = 2
+	linger.ms = 1
+	client.id = camus
+
+2016-11-08 16:56:00,076 DEBUG [main] DEBUG org.apache.kafka.clients.producer.internals.Metadata  - Updated cluster metadata version 1 to Cluster(nodes = [Node(10.1.90.168, 9092), Node(10.1.90.166, 9092), Node(10.1.90.167, 9092)], partitions = [])
+2016-11-08 16:56:00,176 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.producer.internals.Sender  - Starting Kafka producer I/O thread.
+2016-11-08 16:56:00,176 DEBUG [main] DEBUG org.apache.kafka.clients.producer.KafkaProducer  - Kafka producer started
+2016-11-08 16:56:00,548 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Trying to send metadata request to node -3
+2016-11-08 16:56:00,548 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Init connection to node -3 for sending metadata request in the next iteration
+2016-11-08 16:56:00,550 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Initiating connection to node -3 at 10.1.90.168:9092.
+2016-11-08 16:56:00,551 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Trying to send metadata request to node -3
+2016-11-08 16:56:00,553 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Completed connection to node -3
+2016-11-08 16:56:00,651 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Trying to send metadata request to node -3
+2016-11-08 16:56:00,670 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Sending metadata request ClientRequest(expectResponse=true, payload=null, request=RequestSend(header={api_key=3,api_version=0,correlation_id=0,client_id=camus}, body={topics=[test-topic]})) to node -3
+2016-11-08 16:56:00,686 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.producer.internals.Metadata  - Updated cluster metadata version 2 to Cluster(nodes = [Node(1, 10.1.90.166, 9092), Node(3, 10.1.90.168, 9092), Node(2, 10.1.90.167, 9092)], partitions = [Partition(topic = test-topic, partition = 0, leader = 3, replicas = [3,1,], isr = [3,1,], Partition(topic = test-topic, partition = 1, leader = 1, replicas = [1,2,], isr = [1,2,], Partition(topic = test-topic, partition = 2, leader = 2, replicas = [2,3,], isr = [2,3,]])
+2016-11-08 16:56:00,693 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Initiating connection to node 2 at 10.1.90.167:9092.
+2016-11-08 16:56:00,697 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Completed connection to node 2
+2016-11-08 16:56:44,268 INFO [main] INFO  org.apache.kafka.clients.producer.ProducerConfig  - ProducerConfig values: 
+	compression.type = none
+	metric.reporters = []
+	metadata.max.age.ms = 300000
+	metadata.fetch.timeout.ms = 60000
+	acks = 0
+	batch.size = 16384
+	reconnect.backoff.ms = 10
+	bootstrap.servers = [10.1.90.166:9092, 10.1.90.167:9092, 10.1.90.168:9092]
+	receive.buffer.bytes = 32768
+	retry.backoff.ms = 100
+	buffer.memory = 33554432
+	timeout.ms = 30000
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	retries = 0
+	max.request.size = 1048576
+	block.on.buffer.full = true
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	metrics.sample.window.ms = 30000
+	send.buffer.bytes = 131072
+	max.in.flight.requests.per.connection = 5
+	metrics.num.samples = 2
+	linger.ms = 1
+	client.id = camus
+
+2016-11-08 16:57:06,579 DEBUG [main] DEBUG org.apache.kafka.clients.producer.internals.Metadata  - Updated cluster metadata version 1 to Cluster(nodes = [Node(10.1.90.166, 9092), Node(10.1.90.167, 9092), Node(10.1.90.168, 9092)], partitions = [])
+2016-11-08 16:57:06,683 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.producer.internals.Sender  - Starting Kafka producer I/O thread.
+2016-11-08 16:57:06,683 DEBUG [main] DEBUG org.apache.kafka.clients.producer.KafkaProducer  - Kafka producer started
+2016-11-08 16:57:07,148 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Trying to send metadata request to node -1
+2016-11-08 16:57:07,149 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Init connection to node -1 for sending metadata request in the next iteration
+2016-11-08 16:57:07,149 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Initiating connection to node -1 at 10.1.90.166:9092.
+2016-11-08 16:57:07,151 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Trying to send metadata request to node -1
+2016-11-08 16:57:07,152 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Completed connection to node -1
+2016-11-08 16:57:07,250 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Trying to send metadata request to node -1
+2016-11-08 16:57:07,265 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Sending metadata request ClientRequest(expectResponse=true, payload=null, request=RequestSend(header={api_key=3,api_version=0,correlation_id=0,client_id=camus}, body={topics=[test-topic]})) to node -1
+2016-11-08 16:57:07,280 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.producer.internals.Metadata  - Updated cluster metadata version 2 to Cluster(nodes = [Node(2, 10.1.90.167, 9092), Node(1, 10.1.90.166, 9092), Node(3, 10.1.90.168, 9092)], partitions = [Partition(topic = test-topic, partition = 0, leader = 3, replicas = [3,1,], isr = [3,1,], Partition(topic = test-topic, partition = 1, leader = 1, replicas = [1,2,], isr = [1,2,], Partition(topic = test-topic, partition = 2, leader = 2, replicas = [2,3,], isr = [2,3,]])
+2016-11-08 16:57:07,290 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Initiating connection to node 2 at 10.1.90.167:9092.
+2016-11-08 16:57:07,293 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Completed connection to node 2
+2016-11-08 17:40:36,199 INFO [main] INFO  org.apache.kafka.clients.producer.ProducerConfig  - ProducerConfig values: 
+	compression.type = none
+	metric.reporters = []
+	metadata.max.age.ms = 300000
+	metadata.fetch.timeout.ms = 60000
+	acks = 0
+	batch.size = 16384
+	reconnect.backoff.ms = 10
+	bootstrap.servers = [10.1.90.166:9092, 10.1.90.167:9092, 10.1.90.168:9092]
+	receive.buffer.bytes = 32768
+	retry.backoff.ms = 100
+	buffer.memory = 33554432
+	timeout.ms = 30000
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	retries = 0
+	max.request.size = 1048576
+	block.on.buffer.full = true
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	metrics.sample.window.ms = 30000
+	send.buffer.bytes = 131072
+	max.in.flight.requests.per.connection = 5
+	metrics.num.samples = 2
+	linger.ms = 1
+	client.id = camus
+
+2016-11-08 17:40:58,544 DEBUG [main] DEBUG org.apache.kafka.clients.producer.internals.Metadata  - Updated cluster metadata version 1 to Cluster(nodes = [Node(10.1.90.166, 9092), Node(10.1.90.168, 9092), Node(10.1.90.167, 9092)], partitions = [])
+2016-11-08 17:40:58,638 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.producer.internals.Sender  - Starting Kafka producer I/O thread.
+2016-11-08 17:40:58,638 DEBUG [main] DEBUG org.apache.kafka.clients.producer.KafkaProducer  - Kafka producer started
+2016-11-08 17:40:59,043 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Trying to send metadata request to node -1
+2016-11-08 17:40:59,043 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Init connection to node -1 for sending metadata request in the next iteration
+2016-11-08 17:40:59,043 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Initiating connection to node -1 at 10.1.90.166:9092.
+2016-11-08 17:40:59,046 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Trying to send metadata request to node -1
+2016-11-08 17:40:59,046 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Completed connection to node -1
+2016-11-08 17:40:59,146 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Trying to send metadata request to node -1
+2016-11-08 17:40:59,162 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Sending metadata request ClientRequest(expectResponse=true, payload=null, request=RequestSend(header={api_key=3,api_version=0,correlation_id=0,client_id=camus}, body={topics=[test-topic]})) to node -1
+2016-11-08 17:40:59,178 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.producer.internals.Metadata  - Updated cluster metadata version 2 to Cluster(nodes = [Node(1, 10.1.90.166, 9092), Node(2, 10.1.90.167, 9092), Node(3, 10.1.90.168, 9092)], partitions = [Partition(topic = test-topic, partition = 0, leader = 3, replicas = [3,1,], isr = [3,1,], Partition(topic = test-topic, partition = 1, leader = 1, replicas = [1,2,], isr = [1,2,], Partition(topic = test-topic, partition = 2, leader = 2, replicas = [2,3,], isr = [2,3,]])
+2016-11-08 17:40:59,184 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Initiating connection to node 3 at 10.1.90.168:9092.
+2016-11-08 17:40:59,188 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Completed connection to node 3
+2016-11-08 17:42:39,669 INFO [main] INFO  org.apache.kafka.clients.producer.ProducerConfig  - ProducerConfig values: 
+	compression.type = none
+	metric.reporters = []
+	metadata.max.age.ms = 300000
+	metadata.fetch.timeout.ms = 60000
+	acks = 0
+	batch.size = 16384
+	reconnect.backoff.ms = 10
+	bootstrap.servers = [10.1.90.166:9092, 10.1.90.167:9092, 10.1.90.168:9092]
+	receive.buffer.bytes = 32768
+	retry.backoff.ms = 100
+	buffer.memory = 33554432
+	timeout.ms = 30000
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	retries = 0
+	max.request.size = 1048576
+	block.on.buffer.full = true
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	metrics.sample.window.ms = 30000
+	send.buffer.bytes = 131072
+	max.in.flight.requests.per.connection = 5
+	metrics.num.samples = 2
+	linger.ms = 1
+	client.id = camus
+
+2016-11-08 17:43:00,026 DEBUG [main] DEBUG org.apache.kafka.clients.producer.internals.Metadata  - Updated cluster metadata version 1 to Cluster(nodes = [Node(10.1.90.166, 9092), Node(10.1.90.167, 9092), Node(10.1.90.168, 9092)], partitions = [])
+2016-11-08 17:43:00,116 DEBUG [main] DEBUG org.apache.kafka.clients.producer.KafkaProducer  - Kafka producer started
+2016-11-08 17:43:00,120 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.producer.internals.Sender  - Starting Kafka producer I/O thread.
+2016-11-08 17:43:00,485 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Trying to send metadata request to node -1
+2016-11-08 17:43:00,485 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Init connection to node -1 for sending metadata request in the next iteration
+2016-11-08 17:43:00,485 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Initiating connection to node -1 at 10.1.90.166:9092.
+2016-11-08 17:43:00,488 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Trying to send metadata request to node -1
+2016-11-08 17:43:00,490 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Completed connection to node -1
+2016-11-08 17:43:00,588 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Trying to send metadata request to node -1
+2016-11-08 17:43:00,611 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Sending metadata request ClientRequest(expectResponse=true, payload=null, request=RequestSend(header={api_key=3,api_version=0,correlation_id=0,client_id=camus}, body={topics=[test-topic]})) to node -1
+2016-11-08 17:43:00,624 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.producer.internals.Metadata  - Updated cluster metadata version 2 to Cluster(nodes = [Node(3, 10.1.90.168, 9092), Node(2, 10.1.90.167, 9092), Node(1, 10.1.90.166, 9092)], partitions = [Partition(topic = test-topic, partition = 0, leader = 3, replicas = [3,1,], isr = [3,1,], Partition(topic = test-topic, partition = 1, leader = 1, replicas = [1,2,], isr = [1,2,], Partition(topic = test-topic, partition = 2, leader = 2, replicas = [2,3,], isr = [2,3,]])
+2016-11-08 17:43:00,632 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Initiating connection to node 1 at 10.1.90.166:9092.
+2016-11-08 17:43:18,702 INFO [main] INFO  org.apache.kafka.clients.producer.ProducerConfig  - ProducerConfig values: 
+	compression.type = none
+	metric.reporters = []
+	metadata.max.age.ms = 300000
+	metadata.fetch.timeout.ms = 60000
+	acks = 0
+	batch.size = 16384
+	reconnect.backoff.ms = 10
+	bootstrap.servers = [10.1.90.166:9092, 10.1.90.167:9092, 10.1.90.168:9092]
+	receive.buffer.bytes = 32768
+	retry.backoff.ms = 100
+	buffer.memory = 33554432
+	timeout.ms = 30000
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	retries = 0
+	max.request.size = 1048576
+	block.on.buffer.full = true
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	metrics.sample.window.ms = 30000
+	send.buffer.bytes = 131072
+	max.in.flight.requests.per.connection = 5
+	metrics.num.samples = 2
+	linger.ms = 1
+	client.id = camus
+
+2016-11-08 17:43:39,035 DEBUG [main] DEBUG org.apache.kafka.clients.producer.internals.Metadata  - Updated cluster metadata version 1 to Cluster(nodes = [Node(10.1.90.166, 9092), Node(10.1.90.167, 9092), Node(10.1.90.168, 9092)], partitions = [])
+2016-11-08 17:43:39,126 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.producer.internals.Sender  - Starting Kafka producer I/O thread.
+2016-11-08 17:43:39,127 DEBUG [main] DEBUG org.apache.kafka.clients.producer.KafkaProducer  - Kafka producer started
+2016-11-08 17:43:39,494 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Trying to send metadata request to node -2
+2016-11-08 17:43:39,494 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Init connection to node -2 for sending metadata request in the next iteration
+2016-11-08 17:43:39,494 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Initiating connection to node -2 at 10.1.90.167:9092.
+2016-11-08 17:43:39,496 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Trying to send metadata request to node -2
+2016-11-08 17:43:39,497 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Completed connection to node -2
+2016-11-08 17:43:39,596 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Trying to send metadata request to node -2
+2016-11-08 17:43:39,607 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Sending metadata request ClientRequest(expectResponse=true, payload=null, request=RequestSend(header={api_key=3,api_version=0,correlation_id=0,client_id=camus}, body={topics=[test-topic]})) to node -2
+2016-11-08 17:43:39,620 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.producer.internals.Metadata  - Updated cluster metadata version 2 to Cluster(nodes = [Node(2, 10.1.90.167, 9092), Node(1, 10.1.90.166, 9092), Node(3, 10.1.90.168, 9092)], partitions = [Partition(topic = test-topic, partition = 0, leader = 3, replicas = [3,1,], isr = [3,1,], Partition(topic = test-topic, partition = 1, leader = 1, replicas = [1,2,], isr = [1,2,], Partition(topic = test-topic, partition = 2, leader = 2, replicas = [2,3,], isr = [2,3,]])
+2016-11-08 17:43:39,628 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Initiating connection to node 1 at 10.1.90.166:9092.
+2016-11-08 17:43:39,629 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Initiating connection to node 3 at 10.1.90.168:9092.
+2016-11-08 17:43:39,630 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Initiating connection to node 2 at 10.1.90.167:9092.
+2016-11-08 17:44:27,843 INFO [main] INFO  org.apache.kafka.clients.producer.ProducerConfig  - ProducerConfig values: 
+	compression.type = none
+	metric.reporters = []
+	metadata.max.age.ms = 300000
+	metadata.fetch.timeout.ms = 60000
+	acks = all
+	batch.size = 16384
+	reconnect.backoff.ms = 10
+	bootstrap.servers = [10.1.90.166:9092, 10.1.90.167:9092, 10.1.90.168:9092]
+	receive.buffer.bytes = 32768
+	retry.backoff.ms = 100
+	buffer.memory = 33554432
+	timeout.ms = 30000
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	retries = 0
+	max.request.size = 1048576
+	block.on.buffer.full = true
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	metrics.sample.window.ms = 30000
+	send.buffer.bytes = 131072
+	max.in.flight.requests.per.connection = 5
+	metrics.num.samples = 2
+	linger.ms = 1
+	client.id = camus
+
+2016-11-08 17:44:50,027 DEBUG [main] DEBUG org.apache.kafka.clients.producer.internals.Metadata  - Updated cluster metadata version 1 to Cluster(nodes = [Node(10.1.90.166, 9092), Node(10.1.90.168, 9092), Node(10.1.90.167, 9092)], partitions = [])
+2016-11-08 17:44:50,120 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.producer.internals.Sender  - Starting Kafka producer I/O thread.
+2016-11-08 17:44:50,121 DEBUG [main] DEBUG org.apache.kafka.clients.producer.KafkaProducer  - Kafka producer started
+2016-11-08 17:44:50,498 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Trying to send metadata request to node -3
+2016-11-08 17:44:50,498 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Init connection to node -3 for sending metadata request in the next iteration
+2016-11-08 17:44:50,499 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Initiating connection to node -3 at 10.1.90.168:9092.
+2016-11-08 17:44:50,500 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Trying to send metadata request to node -3
+2016-11-08 17:44:50,502 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Completed connection to node -3
+2016-11-08 17:44:50,600 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Trying to send metadata request to node -3
+2016-11-08 17:44:50,613 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Sending metadata request ClientRequest(expectResponse=true, payload=null, request=RequestSend(header={api_key=3,api_version=0,correlation_id=0,client_id=camus}, body={topics=[test-topic]})) to node -3
+2016-11-08 17:44:50,629 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.producer.internals.Metadata  - Updated cluster metadata version 2 to Cluster(nodes = [Node(3, 10.1.90.168, 9092), Node(2, 10.1.90.167, 9092), Node(1, 10.1.90.166, 9092)], partitions = [Partition(topic = test-topic, partition = 0, leader = 3, replicas = [3,1,], isr = [3,1,], Partition(topic = test-topic, partition = 1, leader = 1, replicas = [1,2,], isr = [1,2,], Partition(topic = test-topic, partition = 2, leader = 2, replicas = [2,3,], isr = [2,3,]])
+2016-11-08 17:44:50,639 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Initiating connection to node 3 at 10.1.90.168:9092.
+2016-11-08 17:44:50,640 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Initiating connection to node 1 at 10.1.90.166:9092.
+2016-11-08 17:44:50,642 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Completed connection to node 3
+2016-11-08 17:44:50,643 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Initiating connection to node 2 at 10.1.90.167:9092.
+2016-11-08 17:46:36,503 INFO [main] INFO  org.apache.kafka.clients.producer.ProducerConfig  - ProducerConfig values: 
+	compression.type = none
+	metric.reporters = []
+	metadata.max.age.ms = 300000
+	metadata.fetch.timeout.ms = 60000
+	acks = all
+	batch.size = 16384
+	reconnect.backoff.ms = 10
+	bootstrap.servers = [10.1.90.166:9092, 10.1.90.167:9092, 10.1.90.168:9092]
+	receive.buffer.bytes = 32768
+	retry.backoff.ms = 100
+	buffer.memory = 33554432
+	timeout.ms = 30000
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	retries = 0
+	max.request.size = 1048576
+	block.on.buffer.full = true
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	metrics.sample.window.ms = 30000
+	send.buffer.bytes = 131072
+	max.in.flight.requests.per.connection = 5
+	metrics.num.samples = 2
+	linger.ms = 1
+	client.id = camus
+
+2016-11-08 17:46:59,026 DEBUG [main] DEBUG org.apache.kafka.clients.producer.internals.Metadata  - Updated cluster metadata version 1 to Cluster(nodes = [Node(10.1.90.167, 9092), Node(10.1.90.168, 9092), Node(10.1.90.166, 9092)], partitions = [])
+2016-11-08 17:46:59,115 DEBUG [main] DEBUG org.apache.kafka.clients.producer.KafkaProducer  - Kafka producer started
+2016-11-08 17:46:59,115 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.producer.internals.Sender  - Starting Kafka producer I/O thread.
+2016-11-08 17:46:59,479 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Trying to send metadata request to node -3
+2016-11-08 17:46:59,479 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Init connection to node -3 for sending metadata request in the next iteration
+2016-11-08 17:46:59,479 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Initiating connection to node -3 at 10.1.90.168:9092.
+2016-11-08 17:46:59,481 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Trying to send metadata request to node -3
+2016-11-08 17:46:59,483 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Completed connection to node -3
+2016-11-08 17:46:59,581 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Trying to send metadata request to node -3
+2016-11-08 17:46:59,593 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Sending metadata request ClientRequest(expectResponse=true, payload=null, request=RequestSend(header={api_key=3,api_version=0,correlation_id=0,client_id=camus}, body={topics=[test-topic]})) to node -3
+2016-11-08 17:46:59,603 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.producer.internals.Metadata  - Updated cluster metadata version 2 to Cluster(nodes = [Node(1, 10.1.90.166, 9092), Node(2, 10.1.90.167, 9092), Node(3, 10.1.90.168, 9092)], partitions = [Partition(topic = test-topic, partition = 0, leader = 3, replicas = [3,1,], isr = [3,1,], Partition(topic = test-topic, partition = 1, leader = 1, replicas = [1,2,], isr = [1,2,], Partition(topic = test-topic, partition = 2, leader = 2, replicas = [2,3,], isr = [2,3,]])
+2016-11-08 17:46:59,611 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Initiating connection to node 1 at 10.1.90.166:9092.
+2016-11-08 17:46:59,614 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Completed connection to node 1
+2016-11-08 17:47:00,611 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Initiating connection to node 2 at 10.1.90.167:9092.
+2016-11-08 17:47:00,616 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Completed connection to node 2
+2016-11-08 17:47:01,613 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Initiating connection to node 3 at 10.1.90.168:9092.
+2016-11-08 17:47:01,618 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Completed connection to node 3
+2016-11-08 17:48:40,741 INFO [main] INFO  org.apache.kafka.clients.producer.ProducerConfig  - ProducerConfig values: 
+	compression.type = none
+	metric.reporters = []
+	metadata.max.age.ms = 300000
+	metadata.fetch.timeout.ms = 60000
+	acks = all
+	batch.size = 16384
+	reconnect.backoff.ms = 10
+	bootstrap.servers = [10.1.90.166:9092, 10.1.90.167:9092, 10.1.90.168:9092]
+	receive.buffer.bytes = 32768
+	retry.backoff.ms = 100
+	buffer.memory = 33554432
+	timeout.ms = 30000
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	retries = 0
+	max.request.size = 1048576
+	block.on.buffer.full = true
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	metrics.sample.window.ms = 30000
+	send.buffer.bytes = 131072
+	max.in.flight.requests.per.connection = 5
+	metrics.num.samples = 2
+	linger.ms = 1
+	client.id = camus
+
+2016-11-08 17:49:03,042 DEBUG [main] DEBUG org.apache.kafka.clients.producer.internals.Metadata  - Updated cluster metadata version 1 to Cluster(nodes = [Node(10.1.90.168, 9092), Node(10.1.90.167, 9092), Node(10.1.90.166, 9092)], partitions = [])
+2016-11-08 17:49:03,132 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.producer.internals.Sender  - Starting Kafka producer I/O thread.
+2016-11-08 17:49:03,132 DEBUG [main] DEBUG org.apache.kafka.clients.producer.KafkaProducer  - Kafka producer started
+2016-11-08 17:49:03,509 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Trying to send metadata request to node -2
+2016-11-08 17:49:03,509 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Init connection to node -2 for sending metadata request in the next iteration
+2016-11-08 17:49:03,509 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Initiating connection to node -2 at 10.1.90.167:9092.
+2016-11-08 17:49:03,511 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Trying to send metadata request to node -2
+2016-11-08 17:49:03,512 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Completed connection to node -2
+2016-11-08 17:49:03,611 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Trying to send metadata request to node -2
+2016-11-08 17:49:03,625 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Sending metadata request ClientRequest(expectResponse=true, payload=null, request=RequestSend(header={api_key=3,api_version=0,correlation_id=0,client_id=camus}, body={topics=[test-topic]})) to node -2
+2016-11-08 17:49:03,639 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.producer.internals.Metadata  - Updated cluster metadata version 2 to Cluster(nodes = [Node(2, 10.1.90.167, 9092), Node(3, 10.1.90.168, 9092), Node(1, 10.1.90.166, 9092)], partitions = [Partition(topic = test-topic, partition = 0, leader = 3, replicas = [3,1,], isr = [3,1,], Partition(topic = test-topic, partition = 1, leader = 1, replicas = [1,2,], isr = [1,2,], Partition(topic = test-topic, partition = 2, leader = 2, replicas = [2,3,], isr = [2,3,]])
+2016-11-08 17:49:03,647 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Initiating connection to node 3 at 10.1.90.168:9092.
+2016-11-08 17:49:03,649 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Initiating connection to node 1 at 10.1.90.166:9092.
+2016-11-08 17:49:03,650 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Initiating connection to node 2 at 10.1.90.167:9092.
+2016-11-08 17:49:59,685 INFO [main] INFO  org.apache.kafka.clients.producer.ProducerConfig  - ProducerConfig values: 
+	compression.type = none
+	metric.reporters = []
+	metadata.max.age.ms = 300000
+	metadata.fetch.timeout.ms = 60000
+	acks = all
+	batch.size = 16384
+	reconnect.backoff.ms = 10
+	bootstrap.servers = [10.1.90.166:9092, 10.1.90.167:9092, 10.1.90.168:9092]
+	receive.buffer.bytes = 32768
+	retry.backoff.ms = 100
+	buffer.memory = 33554432
+	timeout.ms = 30000
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	retries = 0
+	max.request.size = 1048576
+	block.on.buffer.full = true
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	metrics.sample.window.ms = 30000
+	send.buffer.bytes = 131072
+	max.in.flight.requests.per.connection = 5
+	metrics.num.samples = 2
+	linger.ms = 0
+	client.id = camus
+
+2016-11-08 17:50:20,042 DEBUG [main] DEBUG org.apache.kafka.clients.producer.internals.Metadata  - Updated cluster metadata version 1 to Cluster(nodes = [Node(10.1.90.166, 9092), Node(10.1.90.168, 9092), Node(10.1.90.167, 9092)], partitions = [])
+2016-11-08 17:50:20,133 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.producer.internals.Sender  - Starting Kafka producer I/O thread.
+2016-11-08 17:50:20,133 DEBUG [main] DEBUG org.apache.kafka.clients.producer.KafkaProducer  - Kafka producer started
+2016-11-08 17:50:20,503 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Trying to send metadata request to node -3
+2016-11-08 17:50:20,503 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Init connection to node -3 for sending metadata request in the next iteration
+2016-11-08 17:50:20,503 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Initiating connection to node -3 at 10.1.90.168:9092.
+2016-11-08 17:50:20,505 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Trying to send metadata request to node -3
+2016-11-08 17:50:20,506 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Completed connection to node -3
+2016-11-08 17:50:20,605 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Trying to send metadata request to node -3
+2016-11-08 17:50:20,624 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Sending metadata request ClientRequest(expectResponse=true, payload=null, request=RequestSend(header={api_key=3,api_version=0,correlation_id=0,client_id=camus}, body={topics=[test-topic]})) to node -3
+2016-11-08 17:50:20,639 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.producer.internals.Metadata  - Updated cluster metadata version 2 to Cluster(nodes = [Node(1, 10.1.90.166, 9092), Node(2, 10.1.90.167, 9092), Node(3, 10.1.90.168, 9092)], partitions = [Partition(topic = test-topic, partition = 0, leader = 3, replicas = [3,1,], isr = [3,1,], Partition(topic = test-topic, partition = 1, leader = 1, replicas = [1,2,], isr = [1,2,], Partition(topic = test-topic, partition = 2, leader = 2, replicas = [2,3,], isr = [2,3,]])
+2016-11-08 17:50:20,648 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Initiating connection to node 2 at 10.1.90.167:9092.
+2016-11-08 17:50:20,648 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Initiating connection to node 3 at 10.1.90.168:9092.
+2016-11-08 17:50:20,648 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Initiating connection to node 1 at 10.1.90.166:9092.
+2016-11-08 17:51:13,984 INFO [main] INFO  org.apache.kafka.clients.producer.ProducerConfig  - ProducerConfig values: 
+	compression.type = none
+	metric.reporters = []
+	metadata.max.age.ms = 300000
+	metadata.fetch.timeout.ms = 60000
+	acks = all
+	batch.size = 16384
+	reconnect.backoff.ms = 10
+	bootstrap.servers = [10.1.90.166:9092, 10.1.90.167:9092, 10.1.90.168:9092]
+	receive.buffer.bytes = 32768
+	retry.backoff.ms = 100
+	buffer.memory = 33554432
+	timeout.ms = 30000
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	retries = 0
+	max.request.size = 1048576
+	block.on.buffer.full = true
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	metrics.sample.window.ms = 30000
+	send.buffer.bytes = 131072
+	max.in.flight.requests.per.connection = 5
+	metrics.num.samples = 2
+	linger.ms = 0
+	client.id = camus
+
+2016-11-08 17:51:36,528 DEBUG [main] DEBUG org.apache.kafka.clients.producer.internals.Metadata  - Updated cluster metadata version 1 to Cluster(nodes = [Node(10.1.90.168, 9092), Node(10.1.90.167, 9092), Node(10.1.90.166, 9092)], partitions = [])
+2016-11-08 17:51:36,624 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.producer.internals.Sender  - Starting Kafka producer I/O thread.
+2016-11-08 17:51:36,624 DEBUG [main] DEBUG org.apache.kafka.clients.producer.KafkaProducer  - Kafka producer started
+2016-11-08 17:51:38,015 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Trying to send metadata request to node -2
+2016-11-08 17:51:38,015 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Init connection to node -2 for sending metadata request in the next iteration
+2016-11-08 17:51:38,015 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Initiating connection to node -2 at 10.1.90.167:9092.
+2016-11-08 17:51:38,017 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Trying to send metadata request to node -2
+2016-11-08 17:51:38,019 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Completed connection to node -2
+2016-11-08 17:51:38,117 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Trying to send metadata request to node -2
+2016-11-08 17:51:38,139 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Sending metadata request ClientRequest(expectResponse=true, payload=null, request=RequestSend(header={api_key=3,api_version=0,correlation_id=0,client_id=camus}, body={topics=[test-topic]})) to node -2
+2016-11-08 17:51:38,155 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.producer.internals.Metadata  - Updated cluster metadata version 2 to Cluster(nodes = [Node(3, 10.1.90.168, 9092), Node(1, 10.1.90.166, 9092), Node(2, 10.1.90.167, 9092)], partitions = [Partition(topic = test-topic, partition = 0, leader = 3, replicas = [3,1,], isr = [3,1,], Partition(topic = test-topic, partition = 1, leader = 1, replicas = [1,2,], isr = [1,2,], Partition(topic = test-topic, partition = 2, leader = 2, replicas = [2,3,], isr = [2,3,]])
+2016-11-08 17:51:38,166 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Initiating connection to node 3 at 10.1.90.168:9092.
+2016-11-08 17:51:38,167 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Initiating connection to node 1 at 10.1.90.166:9092.
+2016-11-08 17:51:38,168 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Initiating connection to node 2 at 10.1.90.167:9092.
+2016-11-08 17:54:23,099 INFO [main] INFO  org.apache.kafka.clients.producer.ProducerConfig  - ProducerConfig values: 
+	compression.type = none
+	metric.reporters = []
+	metadata.max.age.ms = 300000
+	metadata.fetch.timeout.ms = 60000
+	acks = all
+	batch.size = 16384
+	reconnect.backoff.ms = 10
+	bootstrap.servers = [10.1.90.166:9092, 10.1.90.167:9092, 10.1.90.168:9092]
+	receive.buffer.bytes = 32768
+	retry.backoff.ms = 100
+	buffer.memory = 33554432
+	timeout.ms = 30000
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	retries = 0
+	max.request.size = 1048576
+	block.on.buffer.full = true
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	metrics.sample.window.ms = 30000
+	send.buffer.bytes = 131072
+	max.in.flight.requests.per.connection = 5
+	metrics.num.samples = 2
+	linger.ms = 0
+	client.id = camus
+
+2016-11-08 17:54:45,527 DEBUG [main] DEBUG org.apache.kafka.clients.producer.internals.Metadata  - Updated cluster metadata version 1 to Cluster(nodes = [Node(10.1.90.168, 9092), Node(10.1.90.166, 9092), Node(10.1.90.167, 9092)], partitions = [])
+2016-11-08 17:54:45,614 DEBUG [main] DEBUG org.apache.kafka.clients.producer.KafkaProducer  - Kafka producer started
+2016-11-08 17:54:45,614 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.producer.internals.Sender  - Starting Kafka producer I/O thread.
+2016-11-08 17:54:45,989 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Trying to send metadata request to node -2
+2016-11-08 17:54:45,989 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Init connection to node -2 for sending metadata request in the next iteration
+2016-11-08 17:54:45,989 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Initiating connection to node -2 at 10.1.90.167:9092.
+2016-11-08 17:54:45,991 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Trying to send metadata request to node -2
+2016-11-08 17:54:45,994 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Completed connection to node -2
+2016-11-08 17:54:46,091 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Trying to send metadata request to node -2
+2016-11-08 17:54:46,109 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Sending metadata request ClientRequest(expectResponse=true, payload=null, request=RequestSend(header={api_key=3,api_version=0,correlation_id=0,client_id=camus}, body={topics=[test-topic]})) to node -2
+2016-11-08 17:54:46,121 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.producer.internals.Metadata  - Updated cluster metadata version 2 to Cluster(nodes = [Node(1, 10.1.90.166, 9092), Node(2, 10.1.90.167, 9092), Node(3, 10.1.90.168, 9092)], partitions = [Partition(topic = test-topic, partition = 0, leader = 3, replicas = [3,1,], isr = [3,1,], Partition(topic = test-topic, partition = 1, leader = 1, replicas = [1,2,], isr = [1,2,], Partition(topic = test-topic, partition = 2, leader = 2, replicas = [2,3,], isr = [2,3,]])
+2016-11-08 17:54:46,130 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Initiating connection to node 2 at 10.1.90.167:9092.
+2016-11-08 17:54:46,131 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Initiating connection to node 3 at 10.1.90.168:9092.
+2016-11-08 17:54:46,131 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Initiating connection to node 1 at 10.1.90.166:9092.
+2016-11-08 17:54:46,134 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Completed connection to node 2
+2016-11-08 17:56:29,312 INFO [main] INFO  org.apache.kafka.clients.producer.ProducerConfig  - ProducerConfig values: 
+	compression.type = none
+	metric.reporters = []
+	metadata.max.age.ms = 300000
+	metadata.fetch.timeout.ms = 60000
+	acks = all
+	batch.size = 16384
+	reconnect.backoff.ms = 10
+	bootstrap.servers = [10.1.90.166:9092, 10.1.90.167:9092, 10.1.90.168:9092]
+	receive.buffer.bytes = 32768
+	retry.backoff.ms = 100
+	buffer.memory = 33554432
+	timeout.ms = 30000
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	retries = 0
+	max.request.size = 1048576
+	block.on.buffer.full = true
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	metrics.sample.window.ms = 30000
+	send.buffer.bytes = 131072
+	max.in.flight.requests.per.connection = 5
+	metrics.num.samples = 2
+	linger.ms = 0
+	client.id = camus
+
+2016-11-08 17:56:49,503 DEBUG [main] DEBUG org.apache.kafka.clients.producer.internals.Metadata  - Updated cluster metadata version 1 to Cluster(nodes = [Node(10.1.90.166, 9092), Node(10.1.90.168, 9092), Node(10.1.90.167, 9092)], partitions = [])
+2016-11-08 17:56:49,609 DEBUG [main] DEBUG org.apache.kafka.clients.producer.KafkaProducer  - Kafka producer started
+2016-11-08 17:56:49,609 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.producer.internals.Sender  - Starting Kafka producer I/O thread.
+2016-11-08 17:56:49,980 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Trying to send metadata request to node -3
+2016-11-08 17:56:49,980 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Init connection to node -3 for sending metadata request in the next iteration
+2016-11-08 17:56:49,980 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Initiating connection to node -3 at 10.1.90.168:9092.
+2016-11-08 17:56:49,983 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Trying to send metadata request to node -3
+2016-11-08 17:56:49,984 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Completed connection to node -3
+2016-11-08 17:56:50,083 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Trying to send metadata request to node -3
+2016-11-08 17:56:50,099 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Sending metadata request ClientRequest(expectResponse=true, payload=null, request=RequestSend(header={api_key=3,api_version=0,correlation_id=0,client_id=camus}, body={topics=[test-topic]})) to node -3
+2016-11-08 17:56:50,111 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.producer.internals.Metadata  - Updated cluster metadata version 2 to Cluster(nodes = [Node(2, 10.1.90.167, 9092), Node(1, 10.1.90.166, 9092), Node(3, 10.1.90.168, 9092)], partitions = [Partition(topic = test-topic, partition = 0, leader = 3, replicas = [3,1,], isr = [3,1,], Partition(topic = test-topic, partition = 1, leader = 1, replicas = [1,2,], isr = [1,2,], Partition(topic = test-topic, partition = 2, leader = 2, replicas = [2,3,], isr = [2,3,]])
+2016-11-08 17:56:50,118 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Initiating connection to node 3 at 10.1.90.168:9092.
+2016-11-08 17:56:50,122 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Completed connection to node 3
+2016-11-08 18:09:01,899 INFO [Thread-0] INFO  org.apache.kafka.clients.producer.ProducerConfig  - ProducerConfig values: 
+	compression.type = none
+	metric.reporters = []
+	metadata.max.age.ms = 300000
+	metadata.fetch.timeout.ms = 60000
+	acks = all
+	batch.size = 16384
+	reconnect.backoff.ms = 10
+	bootstrap.servers = [10.1.90.166:9092, 10.1.90.167:9092, 10.1.90.168:9092]
+	receive.buffer.bytes = 32768
+	retry.backoff.ms = 100
+	buffer.memory = 33554432
+	timeout.ms = 30000
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	retries = 0
+	max.request.size = 1048576
+	block.on.buffer.full = true
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	metrics.sample.window.ms = 30000
+	send.buffer.bytes = 131072
+	max.in.flight.requests.per.connection = 5
+	metrics.num.samples = 2
+	linger.ms = 0
+	client.id = camus
+
+2016-11-08 18:09:24,517 DEBUG [Thread-0] DEBUG org.apache.kafka.clients.producer.internals.Metadata  - Updated cluster metadata version 1 to Cluster(nodes = [Node(10.1.90.166, 9092), Node(10.1.90.167, 9092), Node(10.1.90.168, 9092)], partitions = [])
+2016-11-08 18:09:24,612 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.producer.internals.Sender  - Starting Kafka producer I/O thread.
+2016-11-08 18:09:24,613 DEBUG [Thread-0] DEBUG org.apache.kafka.clients.producer.KafkaProducer  - Kafka producer started
+2016-11-08 18:09:25,038 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Trying to send metadata request to node -3
+2016-11-08 18:09:25,039 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Init connection to node -3 for sending metadata request in the next iteration
+2016-11-08 18:09:25,039 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Initiating connection to node -3 at 10.1.90.168:9092.
+2016-11-08 18:09:25,042 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Trying to send metadata request to node -3
+2016-11-08 18:09:25,043 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Completed connection to node -3
+2016-11-08 18:09:25,142 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Trying to send metadata request to node -3
+2016-11-08 18:09:25,158 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Sending metadata request ClientRequest(expectResponse=true, payload=null, request=RequestSend(header={api_key=3,api_version=0,correlation_id=0,client_id=camus}, body={topics=[test-topic]})) to node -3
+2016-11-08 18:09:25,171 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.producer.internals.Metadata  - Updated cluster metadata version 2 to Cluster(nodes = [Node(1, 10.1.90.166, 9092), Node(2, 10.1.90.167, 9092), Node(3, 10.1.90.168, 9092)], partitions = [Partition(topic = test-topic, partition = 0, leader = 3, replicas = [3,1,], isr = [3,1,], Partition(topic = test-topic, partition = 1, leader = 1, replicas = [1,2,], isr = [1,2,], Partition(topic = test-topic, partition = 2, leader = 2, replicas = [2,3,], isr = [2,3,]])
+2016-11-08 18:09:25,179 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Initiating connection to node 1 at 10.1.90.166:9092.
+2016-11-08 18:09:25,181 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Initiating connection to node 3 at 10.1.90.168:9092.
+2016-11-08 18:09:25,181 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Initiating connection to node 2 at 10.1.90.167:9092.
+2016-11-08 18:10:02,599 INFO [Thread-0] INFO  org.apache.kafka.clients.producer.ProducerConfig  - ProducerConfig values: 
+	compression.type = none
+	metric.reporters = []
+	metadata.max.age.ms = 300000
+	metadata.fetch.timeout.ms = 60000
+	acks = all
+	batch.size = 16384
+	reconnect.backoff.ms = 10
+	bootstrap.servers = [10.1.90.166:9092, 10.1.90.167:9092, 10.1.90.168:9092]
+	receive.buffer.bytes = 32768
+	retry.backoff.ms = 100
+	buffer.memory = 33554432
+	timeout.ms = 30000
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	retries = 0
+	max.request.size = 1048576
+	block.on.buffer.full = true
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	metrics.sample.window.ms = 30000
+	send.buffer.bytes = 131072
+	max.in.flight.requests.per.connection = 5
+	metrics.num.samples = 2
+	linger.ms = 0
+	client.id = camus
+
+2016-11-08 18:10:23,002 DEBUG [Thread-0] DEBUG org.apache.kafka.clients.producer.internals.Metadata  - Updated cluster metadata version 1 to Cluster(nodes = [Node(10.1.90.167, 9092), Node(10.1.90.168, 9092), Node(10.1.90.166, 9092)], partitions = [])
+2016-11-08 18:10:23,102 DEBUG [Thread-0] DEBUG org.apache.kafka.clients.producer.KafkaProducer  - Kafka producer started
+2016-11-08 18:10:23,102 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.producer.internals.Sender  - Starting Kafka producer I/O thread.
+2016-11-08 18:10:23,476 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Trying to send metadata request to node -2
+2016-11-08 18:10:23,476 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Init connection to node -2 for sending metadata request in the next iteration
+2016-11-08 18:10:23,476 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Initiating connection to node -2 at 10.1.90.167:9092.
+2016-11-08 18:10:23,478 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Trying to send metadata request to node -2
+2016-11-08 18:10:23,479 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Completed connection to node -2
+2016-11-08 18:10:23,578 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Trying to send metadata request to node -2
+2016-11-08 18:10:23,595 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Sending metadata request ClientRequest(expectResponse=true, payload=null, request=RequestSend(header={api_key=3,api_version=0,correlation_id=0,client_id=camus}, body={topics=[test-topic]})) to node -2
+2016-11-08 18:10:23,609 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.producer.internals.Metadata  - Updated cluster metadata version 2 to Cluster(nodes = [Node(3, 10.1.90.168, 9092), Node(2, 10.1.90.167, 9092), Node(1, 10.1.90.166, 9092)], partitions = [Partition(topic = test-topic, partition = 0, leader = 3, replicas = [3,1,], isr = [3,1,], Partition(topic = test-topic, partition = 1, leader = 1, replicas = [1,2,], isr = [1,2,], Partition(topic = test-topic, partition = 2, leader = 2, replicas = [2,3,], isr = [2,3,]])
+2016-11-08 18:10:23,620 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Initiating connection to node 3 at 10.1.90.168:9092.
+2016-11-08 18:10:23,621 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Initiating connection to node 1 at 10.1.90.166:9092.
+2016-11-08 18:10:23,621 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Initiating connection to node 2 at 10.1.90.167:9092.
+2016-11-08 18:12:23,198 INFO [Thread-0] INFO  org.apache.kafka.clients.producer.ProducerConfig  - ProducerConfig values: 
+	compression.type = none
+	metric.reporters = []
+	metadata.max.age.ms = 300000
+	metadata.fetch.timeout.ms = 60000
+	acks = all
+	batch.size = 16384
+	reconnect.backoff.ms = 10
+	bootstrap.servers = [10.1.90.166:9092, 10.1.90.167:9092, 10.1.90.168:9092]
+	receive.buffer.bytes = 32768
+	retry.backoff.ms = 100
+	buffer.memory = 33554432
+	timeout.ms = 30000
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	retries = 0
+	max.request.size = 1048576
+	block.on.buffer.full = true
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	metrics.sample.window.ms = 30000
+	send.buffer.bytes = 131072
+	max.in.flight.requests.per.connection = 5
+	metrics.num.samples = 2
+	linger.ms = 0
+	client.id = camus
+
+2016-11-08 18:12:45,494 DEBUG [Thread-0] DEBUG org.apache.kafka.clients.producer.internals.Metadata  - Updated cluster metadata version 1 to Cluster(nodes = [Node(10.1.90.166, 9092), Node(10.1.90.168, 9092), Node(10.1.90.167, 9092)], partitions = [])
+2016-11-08 18:12:45,587 DEBUG [Thread-0] DEBUG org.apache.kafka.clients.producer.KafkaProducer  - Kafka producer started
+2016-11-08 18:12:45,591 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.producer.internals.Sender  - Starting Kafka producer I/O thread.
+2016-11-08 18:12:45,955 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Trying to send metadata request to node -1
+2016-11-08 18:12:45,956 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Init connection to node -1 for sending metadata request in the next iteration
+2016-11-08 18:12:45,956 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Initiating connection to node -1 at 10.1.90.166:9092.
+2016-11-08 18:12:45,958 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Trying to send metadata request to node -1
+2016-11-08 18:12:45,960 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Completed connection to node -1
+2016-11-08 18:12:46,058 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Trying to send metadata request to node -1
+2016-11-08 18:12:46,070 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Sending metadata request ClientRequest(expectResponse=true, payload=null, request=RequestSend(header={api_key=3,api_version=0,correlation_id=0,client_id=camus}, body={topics=[test-topic]})) to node -1
+2016-11-08 18:12:46,082 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.producer.internals.Metadata  - Updated cluster metadata version 2 to Cluster(nodes = [Node(1, 10.1.90.166, 9092), Node(2, 10.1.90.167, 9092), Node(3, 10.1.90.168, 9092)], partitions = [Partition(topic = test-topic, partition = 0, leader = 3, replicas = [3,1,], isr = [3,1,], Partition(topic = test-topic, partition = 1, leader = 1, replicas = [1,2,], isr = [1,2,], Partition(topic = test-topic, partition = 2, leader = 2, replicas = [2,3,], isr = [2,3,]])
+2016-11-08 18:12:46,090 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Initiating connection to node 3 at 10.1.90.168:9092.
+2016-11-08 18:12:46,091 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Initiating connection to node 1 at 10.1.90.166:9092.
+2016-11-08 18:12:46,092 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Initiating connection to node 2 at 10.1.90.167:9092.
+2016-11-08 18:12:55,921 INFO [Thread-0] INFO  org.apache.kafka.clients.producer.ProducerConfig  - ProducerConfig values: 
+	compression.type = none
+	metric.reporters = []
+	metadata.max.age.ms = 300000
+	metadata.fetch.timeout.ms = 60000
+	acks = all
+	batch.size = 16384
+	reconnect.backoff.ms = 10
+	bootstrap.servers = [10.1.90.166:9092, 10.1.90.167:9092, 10.1.90.168:9092]
+	receive.buffer.bytes = 32768
+	retry.backoff.ms = 100
+	buffer.memory = 33554432
+	timeout.ms = 30000
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	retries = 0
+	max.request.size = 1048576
+	block.on.buffer.full = true
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	metrics.sample.window.ms = 30000
+	send.buffer.bytes = 131072
+	max.in.flight.requests.per.connection = 5
+	metrics.num.samples = 2
+	linger.ms = 0
+	client.id = camus
+
+2016-11-08 18:13:16,495 DEBUG [Thread-0] DEBUG org.apache.kafka.clients.producer.internals.Metadata  - Updated cluster metadata version 1 to Cluster(nodes = [Node(10.1.90.168, 9092), Node(10.1.90.166, 9092), Node(10.1.90.167, 9092)], partitions = [])
+2016-11-08 18:13:16,598 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.producer.internals.Sender  - Starting Kafka producer I/O thread.
+2016-11-08 18:13:16,598 DEBUG [Thread-0] DEBUG org.apache.kafka.clients.producer.KafkaProducer  - Kafka producer started
+2016-11-08 18:13:16,986 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Trying to send metadata request to node -2
+2016-11-08 18:13:16,987 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Init connection to node -2 for sending metadata request in the next iteration
+2016-11-08 18:13:16,987 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Initiating connection to node -2 at 10.1.90.167:9092.
+2016-11-08 18:13:16,989 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Trying to send metadata request to node -2
+2016-11-08 18:13:16,991 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Completed connection to node -2
+2016-11-08 18:13:17,089 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Trying to send metadata request to node -2
+2016-11-08 18:13:17,111 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Sending metadata request ClientRequest(expectResponse=true, payload=null, request=RequestSend(header={api_key=3,api_version=0,correlation_id=0,client_id=camus}, body={topics=[test-topic]})) to node -2
+2016-11-08 18:13:17,125 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.producer.internals.Metadata  - Updated cluster metadata version 2 to Cluster(nodes = [Node(3, 10.1.90.168, 9092), Node(1, 10.1.90.166, 9092), Node(2, 10.1.90.167, 9092)], partitions = [Partition(topic = test-topic, partition = 0, leader = 3, replicas = [3,1,], isr = [3,1,], Partition(topic = test-topic, partition = 1, leader = 1, replicas = [1,2,], isr = [1,2,], Partition(topic = test-topic, partition = 2, leader = 2, replicas = [2,3,], isr = [2,3,]])
+2016-11-08 18:13:17,134 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Initiating connection to node 2 at 10.1.90.167:9092.
+2016-11-08 18:13:17,135 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Initiating connection to node 3 at 10.1.90.168:9092.
+2016-11-08 18:13:17,135 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Initiating connection to node 1 at 10.1.90.166:9092.
+2016-11-08 18:13:17,138 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Completed connection to node 2
+2016-11-08 18:13:17,143 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Completed connection to node 1
+2016-11-08 18:13:17,143 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Completed connection to node 3
+2016-11-08 18:16:13,105 INFO [main] INFO  org.apache.kafka.clients.producer.ProducerConfig  - ProducerConfig values: 
+	compression.type = none
+	metric.reporters = []
+	metadata.max.age.ms = 300000
+	metadata.fetch.timeout.ms = 60000
+	acks = all
+	batch.size = 16384
+	reconnect.backoff.ms = 10
+	bootstrap.servers = [10.1.90.166:9092, 10.1.90.167:9092, 10.1.90.168:9092]
+	receive.buffer.bytes = 32768
+	retry.backoff.ms = 100
+	buffer.memory = 33554432
+	timeout.ms = 30000
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	retries = 0
+	max.request.size = 1048576
+	block.on.buffer.full = true
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	metrics.sample.window.ms = 30000
+	send.buffer.bytes = 131072
+	max.in.flight.requests.per.connection = 5
+	metrics.num.samples = 2
+	linger.ms = 0
+	client.id = camus
+
+2016-11-08 18:16:34,507 DEBUG [main] DEBUG org.apache.kafka.clients.producer.internals.Metadata  - Updated cluster metadata version 1 to Cluster(nodes = [Node(10.1.90.168, 9092), Node(10.1.90.166, 9092), Node(10.1.90.167, 9092)], partitions = [])
+2016-11-08 18:16:34,613 DEBUG [main] DEBUG org.apache.kafka.clients.producer.KafkaProducer  - Kafka producer started
+2016-11-08 18:16:34,617 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.producer.internals.Sender  - Starting Kafka producer I/O thread.
+2016-11-08 18:16:35,034 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Trying to send metadata request to node -2
+2016-11-08 18:16:35,034 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Init connection to node -2 for sending metadata request in the next iteration
+2016-11-08 18:16:35,034 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Initiating connection to node -2 at 10.1.90.167:9092.
+2016-11-08 18:16:35,036 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Trying to send metadata request to node -2
+2016-11-08 18:16:35,037 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Completed connection to node -2
+2016-11-08 18:16:35,136 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Trying to send metadata request to node -2
+2016-11-08 18:16:35,150 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Sending metadata request ClientRequest(expectResponse=true, payload=null, request=RequestSend(header={api_key=3,api_version=0,correlation_id=0,client_id=camus}, body={topics=[test-topic]})) to node -2
+2016-11-08 18:16:35,163 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.producer.internals.Metadata  - Updated cluster metadata version 2 to Cluster(nodes = [Node(3, 10.1.90.168, 9092), Node(2, 10.1.90.167, 9092), Node(1, 10.1.90.166, 9092)], partitions = [Partition(topic = test-topic, partition = 0, leader = 3, replicas = [3,1,], isr = [3,1,], Partition(topic = test-topic, partition = 1, leader = 1, replicas = [1,2,], isr = [1,2,], Partition(topic = test-topic, partition = 2, leader = 2, replicas = [2,3,], isr = [2,3,]])
+2016-11-08 18:16:35,172 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Initiating connection to node 3 at 10.1.90.168:9092.
+2016-11-08 18:16:35,172 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Initiating connection to node 1 at 10.1.90.166:9092.
+2016-11-08 18:16:35,174 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Initiating connection to node 2 at 10.1.90.167:9092.
+2016-11-08 18:16:35,175 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Completed connection to node 3
+2016-11-08 18:16:35,181 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Completed connection to node 1
+2016-11-08 18:16:35,181 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Completed connection to node 2
+2016-11-08 18:42:26,762 INFO [main] INFO  org.apache.kafka.clients.consumer.ConsumerConfig  - ConsumerConfig values: 
+	key.deserializer = class org.apache.kafka.common.serialization.StringSerializer
+	metric.reporters = []
+	value.deserializer = class org.apache.kafka.common.serialization.StringSerializer
+	metadata.fetch.timeout.ms = 60000
+	group.id = test-consumer
+	partition.assignment.strategy = range
+	socket.receive.buffer.bytes = 131072
+	reconnect.backoff.ms = 10
+	bootstrap.servers = [10.1.90.166:9092, 10.1.90.167:9092, 10.1.90.168:9092]
+	auto.commit.interval.ms = 1000
+	enable.auto.commit = true
+	total.memory.bytes = 33554432
+	fetch.buffer.bytes = 1048576
+	metrics.sample.window.ms = 30000
+	fetch.max.wait.ms = 500
+	heartbeat.frequency = 3
+	fetch.min.bytes = 1024
+	session.timeout.ms = 1000
+	auto.offset.reset = largest
+	metrics.num.samples = 2
+	client.id = 
+
+2016-11-08 18:43:19,871 INFO [main] INFO  org.apache.kafka.clients.consumer.ConsumerConfig  - ConsumerConfig values: 
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	metric.reporters = []
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	metadata.fetch.timeout.ms = 60000
+	group.id = test-consumer
+	partition.assignment.strategy = range
+	socket.receive.buffer.bytes = 131072
+	reconnect.backoff.ms = 10
+	bootstrap.servers = [10.1.90.166:9092, 10.1.90.167:9092, 10.1.90.168:9092]
+	auto.commit.interval.ms = 1000
+	enable.auto.commit = true
+	total.memory.bytes = 33554432
+	fetch.buffer.bytes = 1048576
+	metrics.sample.window.ms = 30000
+	fetch.max.wait.ms = 500
+	heartbeat.frequency = 3
+	fetch.min.bytes = 1024
+	session.timeout.ms = 1000
+	auto.offset.reset = largest
+	metrics.num.samples = 2
+	client.id = 
+
+2016-11-08 18:43:19,888 WARN [main] WARN  org.apache.kafka.clients.consumer.ConsumerConfig  - The configuration zookeeper.session.timeout.ms = null was supplied but isn't a known config.
+2016-11-08 18:43:19,888 WARN [main] WARN  org.apache.kafka.clients.consumer.ConsumerConfig  - The configuration zookeeper.connect = null was supplied but isn't a known config.
+2016-11-08 18:43:19,888 WARN [main] WARN  org.apache.kafka.clients.consumer.ConsumerConfig  - The configuration zookeeper.sync.time.ms = null was supplied but isn't a known config.
+2016-11-08 18:43:19,888 WARN [main] WARN  org.apache.kafka.clients.consumer.ConsumerConfig  - The configuration partition.assignment.strategy = range was supplied but isn't a known config.
+2016-11-08 18:43:19,888 WARN [main] WARN  org.apache.kafka.clients.consumer.ConsumerConfig  - The configuration group.id = test-consumer was supplied but isn't a known config.
+2016-11-08 18:43:19,888 WARN [main] WARN  org.apache.kafka.clients.consumer.ConsumerConfig  - The configuration auto.commit.interval.ms = 1000 was supplied but isn't a known config.
+2016-11-08 18:43:19,889 DEBUG [main] DEBUG org.apache.kafka.clients.consumer.KafkaConsumer  - Kafka consumer started
+2016-11-08 18:44:00,996 INFO [main] INFO  org.apache.kafka.clients.consumer.ConsumerConfig  - ConsumerConfig values: 
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	metric.reporters = []
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	metadata.fetch.timeout.ms = 60000
+	group.id = test-consumer
+	partition.assignment.strategy = range
+	socket.receive.buffer.bytes = 131072
+	reconnect.backoff.ms = 10
+	bootstrap.servers = [10.1.90.166:9092, 10.1.90.167:9092, 10.1.90.168:9092]
+	auto.commit.interval.ms = 1000
+	enable.auto.commit = true
+	total.memory.bytes = 33554432
+	fetch.buffer.bytes = 1048576
+	metrics.sample.window.ms = 30000
+	fetch.max.wait.ms = 500
+	heartbeat.frequency = 3
+	fetch.min.bytes = 1024
+	session.timeout.ms = 1000
+	auto.offset.reset = largest
+	metrics.num.samples = 2
+	client.id = 
+
+2016-11-08 18:44:01,007 WARN [main] WARN  org.apache.kafka.clients.consumer.ConsumerConfig  - The configuration zookeeper.session.timeout.ms = null was supplied but isn't a known config.
+2016-11-08 18:44:01,007 WARN [main] WARN  org.apache.kafka.clients.consumer.ConsumerConfig  - The configuration zookeeper.connect = null was supplied but isn't a known config.
+2016-11-08 18:44:01,007 WARN [main] WARN  org.apache.kafka.clients.consumer.ConsumerConfig  - The configuration zookeeper.sync.time.ms = null was supplied but isn't a known config.
+2016-11-08 18:44:01,007 WARN [main] WARN  org.apache.kafka.clients.consumer.ConsumerConfig  - The configuration partition.assignment.strategy = range was supplied but isn't a known config.
+2016-11-08 18:44:01,007 WARN [main] WARN  org.apache.kafka.clients.consumer.ConsumerConfig  - The configuration group.id = test-consumer was supplied but isn't a known config.
+2016-11-08 18:44:01,007 WARN [main] WARN  org.apache.kafka.clients.consumer.ConsumerConfig  - The configuration auto.commit.interval.ms = 1000 was supplied but isn't a known config.
+2016-11-08 18:44:01,007 DEBUG [main] DEBUG org.apache.kafka.clients.consumer.KafkaConsumer  - Kafka consumer started
+2016-11-08 18:49:41,002 INFO [main] INFO  org.apache.kafka.clients.producer.ProducerConfig  - ProducerConfig values: 
+	compression.type = none
+	metric.reporters = []
+	metadata.max.age.ms = 300000
+	metadata.fetch.timeout.ms = 60000
+	acks = all
+	batch.size = 16384
+	reconnect.backoff.ms = 10
+	bootstrap.servers = [10.1.90.166:9092, 10.1.90.167:9092, 10.1.90.168:9092]
+	receive.buffer.bytes = 32768
+	retry.backoff.ms = 100
+	buffer.memory = 33554432
+	timeout.ms = 30000
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	retries = 0
+	max.request.size = 1048576
+	block.on.buffer.full = true
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	metrics.sample.window.ms = 30000
+	send.buffer.bytes = 131072
+	max.in.flight.requests.per.connection = 5
+	metrics.num.samples = 2
+	linger.ms = 0
+	client.id = camus
+
+2016-11-08 18:50:03,485 DEBUG [main] DEBUG org.apache.kafka.clients.producer.internals.Metadata  - Updated cluster metadata version 1 to Cluster(nodes = [Node(10.1.90.166, 9092), Node(10.1.90.168, 9092), Node(10.1.90.167, 9092)], partitions = [])
+2016-11-08 18:50:03,580 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.producer.internals.Sender  - Starting Kafka producer I/O thread.
+2016-11-08 18:50:03,581 DEBUG [main] DEBUG org.apache.kafka.clients.producer.KafkaProducer  - Kafka producer started
+2016-11-08 18:50:04,019 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Trying to send metadata request to node -3
+2016-11-08 18:50:04,020 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Init connection to node -3 for sending metadata request in the next iteration
+2016-11-08 18:50:04,020 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Initiating connection to node -3 at 10.1.90.168:9092.
+2016-11-08 18:50:04,022 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Trying to send metadata request to node -3
+2016-11-08 18:50:04,023 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Completed connection to node -3
+2016-11-08 18:50:04,122 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Trying to send metadata request to node -3
+2016-11-08 18:50:04,131 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Sending metadata request ClientRequest(expectResponse=true, payload=null, request=RequestSend(header={api_key=3,api_version=0,correlation_id=0,client_id=camus}, body={topics=[test-topic]})) to node -3
+2016-11-08 18:50:04,141 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.producer.internals.Metadata  - Updated cluster metadata version 2 to Cluster(nodes = [Node(2, 10.1.90.167, 9092), Node(1, 10.1.90.166, 9092), Node(3, 10.1.90.168, 9092)], partitions = [Partition(topic = test-topic, partition = 0, leader = 3, replicas = [3,1,], isr = [3,1,], Partition(topic = test-topic, partition = 1, leader = 1, replicas = [1,2,], isr = [1,2,], Partition(topic = test-topic, partition = 2, leader = 2, replicas = [2,3,], isr = [2,3,]])
+2016-11-08 18:50:04,148 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Initiating connection to node 2 at 10.1.90.167:9092.
+2016-11-08 18:50:04,149 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Initiating connection to node 3 at 10.1.90.168:9092.
+2016-11-08 18:50:04,149 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Initiating connection to node 1 at 10.1.90.166:9092.
+2016-11-08 18:50:04,151 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Completed connection to node 2
+2016-11-08 18:50:04,155 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Completed connection to node 3
+2016-11-08 18:50:04,155 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Completed connection to node 1
+2016-11-08 18:52:43,027 INFO [main] INFO  org.apache.kafka.clients.producer.ProducerConfig  - ProducerConfig values: 
+	compression.type = none
+	metric.reporters = []
+	metadata.max.age.ms = 300000
+	metadata.fetch.timeout.ms = 60000
+	acks = all
+	batch.size = 16384
+	reconnect.backoff.ms = 10
+	bootstrap.servers = [10.1.90.166:9092, 10.1.90.167:9092, 10.1.90.168:9092]
+	receive.buffer.bytes = 32768
+	retry.backoff.ms = 100
+	buffer.memory = 33554432
+	timeout.ms = 30000
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	retries = 0
+	max.request.size = 1048576
+	block.on.buffer.full = true
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	metrics.sample.window.ms = 30000
+	send.buffer.bytes = 131072
+	max.in.flight.requests.per.connection = 5
+	metrics.num.samples = 2
+	linger.ms = 0
+	client.id = camus
+
+2016-11-08 18:53:04,474 DEBUG [main] DEBUG org.apache.kafka.clients.producer.internals.Metadata  - Updated cluster metadata version 1 to Cluster(nodes = [Node(10.1.90.166, 9092), Node(10.1.90.167, 9092), Node(10.1.90.168, 9092)], partitions = [])
+2016-11-08 18:53:04,571 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.producer.internals.Sender  - Starting Kafka producer I/O thread.
+2016-11-08 18:53:04,571 DEBUG [main] DEBUG org.apache.kafka.clients.producer.KafkaProducer  - Kafka producer started
+2016-11-08 18:53:04,956 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Trying to send metadata request to node -1
+2016-11-08 18:53:04,956 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Init connection to node -1 for sending metadata request in the next iteration
+2016-11-08 18:53:04,956 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Initiating connection to node -1 at 10.1.90.166:9092.
+2016-11-08 18:53:04,958 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Trying to send metadata request to node -1
+2016-11-08 18:53:04,960 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Completed connection to node -1
+2016-11-08 18:53:05,058 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Trying to send metadata request to node -1
+2016-11-08 18:53:05,071 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Sending metadata request ClientRequest(expectResponse=true, payload=null, request=RequestSend(header={api_key=3,api_version=0,correlation_id=0,client_id=camus}, body={topics=[test-topic]})) to node -1
+2016-11-08 18:53:05,086 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.producer.internals.Metadata  - Updated cluster metadata version 2 to Cluster(nodes = [Node(3, 10.1.90.168, 9092), Node(2, 10.1.90.167, 9092), Node(1, 10.1.90.166, 9092)], partitions = [Partition(topic = test-topic, partition = 0, leader = 3, replicas = [3,1,], isr = [3,1,], Partition(topic = test-topic, partition = 1, leader = 1, replicas = [1,2,], isr = [1,2,], Partition(topic = test-topic, partition = 2, leader = 2, replicas = [2,3,], isr = [2,3,]])
+2016-11-08 18:53:05,094 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Initiating connection to node 3 at 10.1.90.168:9092.
+2016-11-08 18:53:05,094 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Initiating connection to node 1 at 10.1.90.166:9092.
+2016-11-08 18:53:05,095 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Initiating connection to node 2 at 10.1.90.167:9092.
+2016-11-08 18:53:05,097 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Completed connection to node 3
+2016-11-08 18:53:05,102 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Completed connection to node 1
+2016-11-08 18:53:05,102 DEBUG [kafka-producer-network-thread | camus] DEBUG org.apache.kafka.clients.NetworkClient  - Completed connection to node 2
