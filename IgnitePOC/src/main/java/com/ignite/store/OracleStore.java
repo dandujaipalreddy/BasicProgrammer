@@ -101,7 +101,7 @@ public class OracleStore extends CacheStoreAdapter<Integer, Record> implements S
     private Connection connection() throws SQLException {
         // Open connection to your RDBMS systems (Oracle, MySQL, Postgres, DB2, Microsoft SQL, etc.)
         // In this example we use H2 Database for simplification.
-        String ORACLE_DRIVER="jdbc:oracle:thin:@//fn10vir2221.ivycomptech.co.in:1521/real";
+        String ORACLE_DRIVER="jdbc:oracle:thin:@//localhost:1521/real";
         String POSTGRES_DRIVER="jdbc:postgresql://localhost:5432/SparkTest";
         try {
            // Class.forName("org.postgresql.Driver");
